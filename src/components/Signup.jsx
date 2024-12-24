@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Signup() {
   const [formData, setFormData] = useState({
@@ -27,7 +28,7 @@ function Signup() {
         <h1 className="text-2xl font-bold text-[#0a0a0a] mb-6">Sign Up</h1>
         <form className="space-y-5" onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="name" className="block text-sm text-gray-600 mb-1 text-start">Name</label>
+            <label htmlFor="name" className="block text-sm text-gray-600 mb-1 text-start"></label>
             <input
               type="text"
               id="name"
@@ -39,7 +40,7 @@ function Signup() {
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm text-gray-600 mb-1 text-start">Email</label>
+            <label htmlFor="email" className="block text-sm text-gray-600 mb-1 text-start"></label>
             <input
               type="email"
               id="email"
@@ -51,7 +52,7 @@ function Signup() {
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-sm text-gray-600 mb-1 text-start">Password</label>
+            <label htmlFor="password" className="block text-sm text-gray-600 mb-1 text-start"></label>
             <input
               type="password"
               id="password"
@@ -63,7 +64,7 @@ function Signup() {
           </div>
 
           <div>
-            <label htmlFor="confirmpassword" className="block text-sm text-gray-600 mb-1 text-start">Confirm Password</label>
+            <label htmlFor="confirmpassword" className="block text-sm text-gray-600 mb-1 text-start"></label>
             <input
               type="password"
               id="confirmpassword" 
@@ -75,9 +76,12 @@ function Signup() {
           </div>
           <button
             type="submit"
-            className="w-full py-3 bg-[#191a1a] text-white rounded-md text-lg hover:bg-[#0056b3] transition duration-300">
+            className="w-full py-3 bg-[#191a1a] text-white rounded-md text-lg hover:bg-[#0056b3] transition duration-300 mb-3">
             Sign Up
           </button>
+          <div>
+          <span className="m-4">Already have an account?<Link to="/"className="text-blue-500 hover:underline"> Login</Link></span>
+          </div>
         </form>
       </div>
     </div>

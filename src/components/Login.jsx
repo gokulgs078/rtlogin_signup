@@ -25,7 +25,7 @@ function Login() {
           <h1 className="text-2xl font-bold-text-[#0a0a0a] mb-6 ">Login</h1>
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="email" className="block text-sm text-gray-600 mb-1 text-start">Email</label>
+              <label htmlFor="email" className="block text-sm text-gray-600 mb-1 text-start"></label>
               <input
                 type="email"
                 id="email"
@@ -37,7 +37,7 @@ function Login() {
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm text-gray-600 mb-1 text-start">Password</label>
+              <label htmlFor="password" className="block text-sm text-gray-600 mb-1 text-start"></label>
               <input
                 type="password"
                 id="password"
@@ -46,7 +46,7 @@ function Login() {
                 onChange={handleChange}
                 className="w-full p-3 border border-[#06073f] rounded-md focus:outline-none focus:border-[#007BFF] text-gray-700"
               />
-              <span><Link to="#" className="text-blue-500 hover:underline flex justify-end">Forgot Password?</Link></span>
+              <span><Link to="#" className="text-blue-500 hover:underline flex justify-end pt-3">Forgot Password?</Link></span>
 
             </div>
             <div className="flex flex-col items-center space-y-2">
